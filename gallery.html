@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form class="rw-contact-form" action="index.php" method="post" enctype="multipart/form-data">
+ 
+        <div>
+         
+        <label for="name">Votre Nom :</label> *<br />
+         
+        <input class="form-input-field" type="text" value="" name="subject" id="name" required placehoder="Votre nom" size="40"/><br /><br />
+         
+        <label for="email">Votre Email :</label> *<br />
+         
+        <input class="form-input-field" type="email" value="" name="email" id="email" required placeholder="nom@exemple.fr" size="40"/><br /><br />
+         
+        <label for="subject">Objet du message :</label> *<br />
+         
+        <input class="form-input-field" type="text" value="" name="sujet" id="sujet" required placeholder="Titre de votre message" size="40"/><br /><br />
+         
+        <label for="message">Message :</label> *<br />
+         
+        <textarea class="form-input-field" name="message" id="message" required rows="10" cols="38"></textarea><br /><br />
+         
+        <input class="form-input-button" type="reset" name="resetButton" value="Recommencer" />
+         
+        <input class="form-input-button" type="submit" name="submitButton" value="Envoyer" />
+         
+        </div>
+         
+        </form>
+
+</body>
+</html>
