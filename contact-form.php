@@ -19,11 +19,11 @@ session_start();
 if(!empty($errors)){
     $_SESSION['errors'] = $errors;
     $_SESSION['inputs'] = $_POST; /* pour sauvegarder les données déjà saisies en cas d'erreurs */
-    header('Location: index.php');
+    header('Location: index.php/');
 }else{
     $_SESSION['success'] = 1;
     $message = $_POST['message'];
-    $headers = 'FROM: yves@cri-paris.org';
+    $headers = 'FROM: contact@yanevents.com';
     mail('email', 'Formulaire de contact', $message, $headers);
     header('Location: index.php');
 }

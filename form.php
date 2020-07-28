@@ -36,11 +36,11 @@ if (isset($_POST['submitButton']))
  
     $regex_head = '/[\n\r]/';
  
-    if($_SERVER['HTTP_REFERER'] != 'http://www.monsite.fr/nous_contacter/index.php')
+    if($_SERVER['HTTP_REFERER'] != 'http://www.yanevents.com/about-page.php')
  
     {
  
-      header('Location:  http://www.monsite.fr');
+      header('Location:  http://www.yanevents.com');
  
  
     }
@@ -83,7 +83,7 @@ if (isset($_POST['submitButton']))
  
     {
  
-        $to = 'contact@monsite.fr';
+        $to = 'contact@yanevents.com';
  
         $msg  = 'Bonjour,'."\r\n\r\n";
  
