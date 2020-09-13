@@ -1,5 +1,6 @@
 <?php
 include('parts/header.php');
+$title = "Yan Events | Light up your events";
 ?>
 
 <body>

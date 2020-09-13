@@ -1,0 +1,54 @@
+/* Navigation */
+
+.menu{
+    display: flex;
+    background: var(--primary-color);
+    height: 8vh;
+    position: fixed;
+    z-index: 99;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    width: 100%;
+    box-shadow: 0px 0px 31px 13px rgba(0, 0, 0, 0.1);
+}
+    .visible{
+        visibility: visible;
+        opacity: 1;
+    }
+ul.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    
+    li{
+        list-style: none;
+        cursor: pointer;
+        border-right: 1px solid #fff;
+        flex: 25%;
+
+        &:last-child{
+            border-right: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.5s ease-in-out ;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .bookus{
+            background: var(--secondary-color);
+            padding: 1rem;
+            border-radius: 5px;
+        }
+    }
+}
+.fa-tty::before {
+    content: "\f1e4";
+    padding-right: 1rem;
+}

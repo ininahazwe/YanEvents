@@ -1,0 +1,93 @@
+/* About */
+
+.about{
+    background: var(--primary-color);
+    height: auto;
+    padding: 0 65px;
+
+    h2{
+        color: #fff;
+        text-align: center;
+        font-size: 4rem;
+    }
+}
+
+p.about{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+img.about{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.read-more{
+    position: absolute;
+    right: 130px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+}
+.read-more::before{
+    content: url(../img/read-more.png);
+    transform: rotate(89deg);
+    position: absolute;
+    margin-left: -70px;
+    margin-top: -28px;
+}
+
+.read-more:hover{
+    transform: scale(0.95);
+}
+
+section.about-image{
+    width: 100%;
+    background: var(--primary-color);
+    padding-top: 2rem;
+}
+section.uno, section.dos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    object-fit: cover;
+    
+    .texte{
+        flex: 50%;
+        padding: 6rem;
+    }
+    img{
+        height: 50vh;
+        width: auto;
+        background: none;
+        display: block;
+        margin: auto;
+    }
+    .organisation{
+        flex: 30%;
+        padding: 3rem;
+    }
+    p{
+        color: gray;
+        text-align: center;
+    }
+    .texte-image{
+        flex: 50%;
+    }
+}
+
+section.dos{
+    background: var(--secondary-color);
+
+    p{
+        color: #fff !important;
+    }
+}

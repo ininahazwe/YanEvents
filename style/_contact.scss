@@ -1,0 +1,100 @@
+/* Contact */
+
+section.contact{
+    background: var(--secondary-color);
+    height: auto;
+    width: 100%;
+
+    h2{
+        color: #fff;
+        text-align: center;
+        font-size: 4rem;
+    }
+}
+.contact h2::before{
+    background: var(--primary-color);
+}
+.contact-fond{
+    height: 60%;
+    width: 100%;
+    position: relative;
+}
+img.contact{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.form .inputBx input {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #888;
+    margin:10px;
+    border-radius: 5px;
+    width: 350px;
+}
+.form .inputBx input::placeholder {
+    color: #888;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 14px;
+} 
+.form .inputBx textarea {
+    margin:10px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    min-height: 164px;
+    color: #888;
+    margin:10px;
+    border-radius: 5px;
+    width: 350px;
+}
+.form .inputBx textarea::placeholder {
+    color: #888;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 14px;
+    padding-left: 10px;
+} 
+button[type="submit"]{
+    width: 200px;
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 9px;
+    margin: 8px;
+}
+.contact-fond{
+    background-image:
+    linear-gradient(to bottom, rgba(241, 98, 98, 1), rgba(255, 255, 255, 0)),
+    url('../img/contact-bg.jpg');
+    height: 70vh;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    background-position: top center;
+}
+
+.alert.alert-success{
+    background: #fff;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    width: 25%;
+}
